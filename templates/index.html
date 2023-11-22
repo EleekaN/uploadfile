@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+<h2>upload your files</h2>
+<div>
+    <form action="/upload" method="POST" enctype="multiport/data-form">
+        <label for="file">Choose your file</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" value="upload">
+    </form>
+</div>
+
+{% endblock %}
